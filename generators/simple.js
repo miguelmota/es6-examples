@@ -6,6 +6,13 @@ function* zeroOneTwo() {
 
 var generator = zeroOneTwo();
 
-for (var i of generator) {
-    console.log(i);
+console.log(generator.next()); // { value: 0, done: false }
+console.log(generator.next()); // { value: 1, done: false }
+console.log(generator.next()); // { value: 2, done: false }
+console.log(generator.next()); // { value: undefined, done: true }
+
+generator = zeroOneTwo();
+
+for (let i of generator) {
+    console.log(i); // 0, 1, 2
 }

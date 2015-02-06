@@ -10,4 +10,7 @@ function* fibonacci() {
 
 for (var i of fibonacci()) {
     console.log(i); // 1, 2, ... Infinity
+    if (i > 5000) {
+      break;
+    }
 }

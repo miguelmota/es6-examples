@@ -1,5 +1,3 @@
-// untested
-
 let idGenerator = (id=0)=> ()=> id++;
 
 let nextFrom1000 = idGenerator(1000);
