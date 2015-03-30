@@ -10,3 +10,7 @@ console.log(map.has(obj)); // true
 
 map.delete(obj);
 console.log(map.has(obj)); // false
+
+for (let [key,value] of map) {
+  console.log(key, value);
+}
